@@ -14,6 +14,9 @@ h1{
 h2{
     font-size: 5rem;
 }
+h3{
+    font-size: 1.92rem;
+}
 p{
     font-size: 1.8rem;
 }
@@ -28,4 +31,22 @@ p{
     padding: 1.2rem 2.4rem;
     background-color: #ff7a59;
     border-radius: 2rem;
+}
+/* Media Object*/
+.media-object{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5rem;
+}
+.media__content{
+    width: 40rem;
+    height: 7.2rem;
+}
+.media__image{
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+}
+.media__content>h3{
+    margin-top: 0;
 }
