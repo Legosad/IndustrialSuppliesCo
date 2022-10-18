@@ -50,3 +50,14 @@ p{
 .media__content>h3{
     margin-top: 0;
 }
+/* Feature Object*/
+.feature-object{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature__image{
+    width: 10rem;
+    height: 10rem;
+}
