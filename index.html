@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
     <script src="https://kit.fontawesome.com/50e725f92c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -54,8 +56,110 @@
       </div>
     </div>
   </section>
+  <section>
+    <header class="product__heading">
+      <p>Products and Services</p>
+      <h2>Most Loved Product</h2>
+    </header>
+    <div class="product">
+      <div class="media-object">
+        <div >
+            <img class="media__image" src="/images/magnesia_carbon.jpg" alt="">
+        </div>
+        <div class="media__content">
+            <h3>Magnesia Carbon Bricks</h3>
+            <p>Made in the USA. Our MagC have high erosion and slag resistance properties. Great for lining up the high wear areas of the EAF, ladle and furnace.</p>
+        </div>
+    </div>
+      <div class="media-object">
+        <div >
+            <img class="media__image" src="/images/High_Alumina.jpg" alt="">
+        </div>
+        <div class="media__content">
+            <h3>High Alumina Brick</h3>
+            <p>
+              Suitable for lining furnacces with temperature up to 1850°C the bricks possess excellent hardness,
+              strength and spalling resistance to Alumina refractories are extensively used in heat processing
+              industries.
+            </p>
+        </div>
+    </div>
+      <div class="media-object">
+        <div >
+            <img class="media__image" src="/images/Magnesia_Dolomite.jpg" alt="">
+        </div>
+        <div class="media__content">
+            <h3>Magnesia Dolomite</h3>
+            <p>
+              Made from the purity and naturally occurring magnesia and dolomite. It offers high temperature stability
+              and slag resistance great lining up the tuyere and AOD vessel lining.
+            </p>
+        </div>
+    </div>
+      <div class="media-object">
+        <div >
+            <img class="media__image" src="/images/Resin_bonded_dolomite.jpg" alt="">
+        </div>
+        <div class="media__content">
+            <h3>Resin Bonded Dolomite</h3>
+            <p>
+              Manufactured with naturally occurring high purity dotomite ore. low-cost brick with high temperature
+              resistance. Great for ladie lining.
+            </p>
+        </div>
+    </div>
+    <div class="help">
+      <p class="question">Need Something More?</p>
+      <a href="#" class="ask">Contact us if you have any inquiries</a>
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="feature">
+      <header class="feature__header">
+        <p>Features</p>
+        <h2>Here's What Makes us Different</h2>
+      </header>
+      <div class="feat">
+        <div class="feature-object">
+          <img class="feature__image" src="/images/cost_icon.png" alt="">
+          <p class="feature__content">Competitive cost per ton of refractory consumption.</p>
+            </div>
+        <div class="feature-object">
+          <img class="feature__image" src="/images/brick_icon.png" alt="">
+          <p class="feature__content">Used in - EAF, Ladles, RH degasser, Torpedo cars, coke ovens.</p>
+            </div>
+        <div class="feature-object">
+          <img class="feature__image" src="/images/resistance_icon.png" alt="">
+          <p class="feature__content">Corrosion & thermal resistant for imporved cycle count.</p>
+            </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <header class="partners__header">
+      <p>Our Clients and Partners</p>
+      <h2> We work with several partners</h2>
+    </header>
+    <div class="clients">
+        <img class="clients__logos" src="images/JSW.png" alt="">
+        <img class="clients__logos" src="images/Gerdau.png" alt="">
+        <img class="clients__logos" src="images/ArcelorMittal.png" alt="">
+        <img class="clients__logos" src="images/Cliffs.jpg" alt="">
+        <img class="clients__logos" src="images/Altos.png" alt="">
+    </div>
+  </section>
 
-
-  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+ $('.clients').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
 </body>
 </html>

@@ -37,35 +37,7 @@ p{
     background-color: #ff7a59;
     border-radius: 2rem;
 }
-/* Media Object*/
-.media-object{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 5rem;
-}
-.media__content{
-    width: 40rem;
-    height: 7.2rem;
-}
-.media__image{
-    width: 8rem;
-    height: 8rem;
-    margin-right: 1rem;
-}
-.media__content>h3{
-    margin-top: 0;
-}
-/* Feature Object*/
-.feature-object{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.feature__image{
-    width: 10rem;
-    height: 10rem;
-}
+
 /* Navigation bar */
 .nav-bar{
     padding: 2.4rem 1.2rem;
@@ -204,7 +176,7 @@ p{
     }
     .aboutus__img{
         width: 50%;
-        height: auto;
+        height: 100%;
     }
     .aboutus__info{
         height: 100%;
@@ -212,4 +184,98 @@ p{
     .aboutus__content{
         margin-top: 0;
     }
+}
+/* Products&Services */
+.product__heading{
+    text-align: center;
+    color: var(--color-primary);
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.media-object{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+.media__content{
+    width: fit-content;
+    height: auto;
+}
+.media__image{
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+}
+.media__content>h3{
+    margin-top: 0;
+}
+.help{
+    background-color: rgb(6, 6, 79);
+    padding: 1.5rem 2rem;
+}
+.question{
+    color: #fff;
+    margin-bottom: 0;
+}
+.ask{
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+@media screen and (min-width:768px) {
+    .product{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .media-object{
+        width: 50%;
+    }
+
+}
+/* feature */
+.feature{
+    background-color: rgb(6, 6, 79);
+}
+.feature__header{
+    color: #fff;
+    text-align: center;
+    padding: 10rem 5rem 5rem 5rem;
+}
+.feat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature-object{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+.feature__image{
+    width: 10rem;
+    height: 10rem;
+}
+.feature__content{
+    color: #fff;
+    text-align: center;
+}
+/* Clients and Partners */
+.partners__header{
+    color: var(--color-primary);
+    text-align: center;
+}
+.clients__logos{
+    max-width: 15rem;
+    margin: 3rem;
 }
