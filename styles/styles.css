@@ -23,6 +23,9 @@ h3{
 p{
     font-size: 1.8rem;
 }
+.bfhead{
+    letter-spacing: 5px;
+}
 /* Buttons */
 .btn{
     padding: 1rem 6rem;
@@ -141,6 +144,10 @@ p{
     }
 }
 /* About-us */
+.abtus{
+    max-width: 1000px;
+    margin: auto;
+}
 .aboutus__heading{
     color: var(--color-primary);
     text-align: center;
@@ -148,9 +155,9 @@ p{
 .aboutus{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 2.5rem 0 2.5rem;
+    margin: 0 2.5rem 0 AUTO;
 }
 .aboutus__img{
     height: auto;
@@ -186,6 +193,10 @@ p{
     }
 }
 /* Products&Services */
+.pns{
+    max-width: 1000px;
+    margin: auto;
+}
 .product__heading{
     text-align: center;
     color: var(--color-primary);
@@ -218,6 +229,7 @@ p{
 .help{
     background-color: rgb(6, 6, 79);
     padding: 1.5rem 2rem;
+    margin-top: 5rem;
 }
 .question{
     color: #fff;
@@ -270,6 +282,13 @@ p{
     color: #fff;
     text-align: center;
 }
+@media screen and (min-width:768px) {
+    .feat{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+}
 /* Clients and Partners */
 .partners__header{
     color: var(--color-primary);
@@ -278,4 +297,162 @@ p{
 .clients__logos{
     max-width: 15rem;
     margin: 3rem;
+}
+/* Testimonials */
+.testimonial{
+    background-color: rgb(6, 6, 79);
+    height: 100%;
+    padding: 5rem;
+    
+}
+.testimonial__heading{
+    display: inline;
+    color: #fff;
+    margin: 2rem ;
+    font-size: 3rem;
+}
+.icon{
+    color: var(--color-primary);
+    margin: 0.3rem;
+}
+.main{
+    display: flex;
+    color: #fff;
+    margin-top: 3rem;
+}
+.content{
+    margin: 0 1rem;
+    font-size: 2rem;
+    text-align: justify;
+    text-justify: inter-cluster;
+}
+.fa-quote-right{
+        align-self: flex-end;
+}
+@media screen and (min-width:768px) {
+    .testimonial{
+        justify-self: flex-start;
+    }
+}
+/* Contact Us */ 
+.contactus{
+    min-width: 600px;
+}
+.contactus__heading{
+    text-align: center;
+    color: var(--color-primary);
+}
+form{
+    color: var(--color-primary);
+    margin: 5rem;
+}
+form input, textarea{
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 0.5rem;
+    width: 40%;
+    border-radius: 2rem;
+}
+form label{
+    font-size: 2rem;
+    margin: 1rem 2rem 2rem 2rem;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+#fname{
+    width: 100%;
+    justify-self: flex-start;
+}
+#lname{
+    width: 100%;
+}
+#cname{
+    width: 90%;
+}
+.contactus__info{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+#jtitle{
+    width: 100%;
+}
+#email{
+    width: 100%;
+}
+textarea{
+    width: 90%;
+}
+.first-name{
+    width: 100%;
+}
+.last-name{
+    width: 100%;
+    margin-left: 1rem;
+}
+.job-title{
+    width: 100%;
+}
+.email{
+    width: 100%;
+    margin-left: 1rem;
+}
+.btn__submit{
+    margin-left: 5rem;
+}
+@media screen and (min-width: 768px) {
+    .con-testi{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .testimonial{
+        width: 100%;
+        max-width: 430px;
+    }
+}
+/* Footer */
+footer{
+    background-color: rgb(6, 6, 79);
+    height: auto;
+    margin-top: 10rem;
+}
+.container{
+    background-color: rgb(6, 6, 79);
+    padding: 10rem;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-cluster;
+}
+.footer__heading{
+    text-align: center;
+}
+.footer__text{
+    font-size: 3rem;
+}
+.footer__img{
+    width: 300px;
+    border: solid 2px var(--color-primary);
+}
+@media screen and (min-width:768px) {
+    .container{
+        flex-direction: row;
+        max-width: 1200px;
+    }
+    .footer__content{
+        margin-left: 5rem;
+        height: 300px;
+    }
+    .footer__heading{
+        margin-top: 0;
+        text-align: left;
+    }
 }

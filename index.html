@@ -29,7 +29,7 @@
        <button class="btn domain__btn" type="button">Subscribe to our mailing list</button> 
     </div>
   </section>
-  <section>
+  <section class="abtus">
     <h2 class="aboutus__heading">About Us</h2>
     <div class="aboutus">
       <img class="aboutus__img" src="/images/about_us.jpg" alt="our-machinery">
@@ -56,9 +56,9 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="pns">
     <header class="product__heading">
-      <p>Products and Services</p>
+      <p class="bfhead">Products and Services</p>
       <h2>Most Loved Product</h2>
     </header>
     <div class="product">
@@ -117,7 +117,7 @@
   <section>
     <div class="feature">
       <header class="feature__header">
-        <p>Features</p>
+        <p class="bfhead">Features</p>
         <h2>Here's What Makes us Different</h2>
       </header>
       <div class="feat">
@@ -138,7 +138,7 @@
   </section>
   <section>
     <header class="partners__header">
-      <p>Our Clients and Partners</p>
+      <p class="bfhead">Our Clients and Partners</p>
       <h2> We work with several partners</h2>
     </header>
     <div class="clients">
@@ -149,7 +149,80 @@
         <img class="clients__logos" src="images/Altos.png" alt="">
     </div>
   </section>
-
+  <div class="con-testi">
+    <section class="contactus">
+      <header><h2 class="contactus__heading">Contact Us</h2></header>
+      <form>
+        <div class="name">
+          <div class="first-name">
+            <label for="fname">First Name*</label><br>
+            <input type="text" id="fname" name="fname"><br>
+          </div>
+          <div class="last-name">
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname"><br>
+          </div>
+        </div>
+        <label for="cname">Company Name</label><br>
+        <input type="text" id="cname" name="cname">
+        <div class="contactus__info">
+          <div class="job-title">
+            <label for="jtitle">Job Title</label><br>
+            <input type="text" id="jtitle" name="jtitle">
+          </div>
+          <div class="email">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+          </div>
+        </div>
+        <label for="message">Message</label><br>
+        <textarea type="text" id="message" name="message" rows="3"></textarea>
+        <button class="btn btn__submit" type="button" onclick="alert('You pressed the button!')">Submit</button> 
+      </form>
+    </section>
+    <section>
+      <div class="testimonial">
+        <header class="testimonial__header">
+          <h3 class="testimonial__heading">Testimonials</h3>
+          <i class="fa-solid fa-circle-chevron-left fa-3x icon"></i>
+          <i class="fa-solid fa-circle-chevron-right fa-3x icon"></i>
+        </header>
+        <main class="main">
+          <i class="fa-solid fa-quote-left fa-5x main__icon"></i>
+          <div class="content">
+            <p class="main_text">
+              Altos Hornos de Mexico (AHMSA) hase been working with McKeown International for almost 25 years
+              suppling Silica and Fire Clay brick for our Coke Ovens and Blast Furnace.
+            </p>
+            <p class="main_text">
+    
+              During this period we have purchased approximately 30,000 Tons of ironmaking refractories. We have
+              found that the brick quality and supply have met our requirements, while McKeown Technical has been
+              exceptional.
+    
+            </p>
+            <p class="main_text">
+    
+              McKeown currently suppling 2500 tons of coke oven silica brick and remains high on our vendors list
+              of qualified suppliers.
+    
+            </p>
+          </div>
+          <i class="fa-solid fa-quote-right fa-5x main__icon"></i>
+        </main>
+      </div>
+    </section>
+  </div>
+  <footer>
+      <div class="container">
+        <img class="footer__img" src="images/footer.png" alt="">
+        <div class="footer__content">
+          <h2 class="footer__heading">Download our Whitepaper</h2>
+          <p class="footer__text">Here's how this steel maker was able to increase heats by 10% in the Winter Months.</p>
+          <button class="btn footer__btn" type="button">Download</button>
+        </div>
+      </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
