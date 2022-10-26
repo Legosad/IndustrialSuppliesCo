@@ -304,6 +304,9 @@ p{
     }
 }
 /* Clients and Partners */
+.part{
+    margin-bottom: 15rem;
+}
 .partners__header{
     color: var(--color-primary);
     text-align: center;
